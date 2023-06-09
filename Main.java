@@ -26,7 +26,6 @@ public class Main {
      */
     private static void exercise2() {
         System.out.println("\nExercise 2:");
-        // Change these
         String firstName = "(Tom )";
         String middleName = "(.S.)";
         String lastName = "(mboya)";
@@ -52,12 +51,16 @@ public class Main {
       * "" + 1.5
      *
      */
-    private static void exercise3() {
-        System.out.println("\nExercise 3:");
+     private static void exercise3() {
+         System.out.println("\nExercise 3:");
+         double doubleValue = 1.5;
+         int intValue = 67;
+         char charValue = 'b';
+         boolean booleanValue = true;
 
-        String textFrom2Primitives = ""; // <--- Edit this line
-        System.out.println(textFrom2Primitives);
-    }
+         String textFrom2Primitives = "" + doubleValue + intValue + charValue + booleanValue;
+         System.out.println(textFrom2Primitives);
+     }
 
 
      /**
@@ -67,14 +70,15 @@ public class Main {
      *
      *    You will need to use .trim()
      */
-    private static void exercise4() {
-        System.out.println("\nExercise 4:");
-        String endNumbers = "7 8 9";
-        String middleNumbers = "       4 5 6";
-        String earlyNumbers = "1 2 3";
+     private static void exercise4() {
+         System.out.println("\nExercise 4:");
+         String endNumbers = "7 8 9";
+         String middleNumbers = "       4 5 6";
+         String earlyNumbers = "1 2 3";
 
-        System.out.println(); // <--- Write your code here
-    }
+         String numbers = (earlyNumbers + middleNumbers + endNumbers).trim().replaceAll(" +", " ");
+         System.out.println(numbers);
+     }
 
 
 }
